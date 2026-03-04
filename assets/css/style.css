@@ -717,8 +717,8 @@ textarea {
 }
 
 .cs-topbar-container .cs-topbar-social {
-  padding-right: 330px;
-  border-right: 1px solid #ECECEC;
+  padding-right: 30px;
+  border-right: px solid #ECECEC;
 }
 .cs-topbar-container .cs-topbar-social ul {
   display: flex;
@@ -744,6 +744,7 @@ textarea {
   z-index: 99;
   background: #fff;
   transition: all 0.4s ease;
+  overflow-x: clip;
 }
 
 @media screen and (max-width: 1320px) {
@@ -751,8 +752,8 @@ textarea {
     display: none;
   }
   .cs_site_header.cs_style1 .cs_main_header_right {
-    margin-right: 0px !important;
-  }
+  margin-right: 0 !important;
+}
   .cs_site_header.cs_style1 .cs_main_header_right .cs-header-additional-item:hover a {
     color: #D40511;
     transition: all 0.4s ease;
@@ -777,7 +778,7 @@ textarea {
   align-items: center;
   align-items: center;
   height: 100%;
-  margin-right: 300px;
+  margin-right: 10px;
 }
 .cs_site_header.cs_style1 .cs_main_header_right .cs-header-additional-item {
   margin-right: 30px;

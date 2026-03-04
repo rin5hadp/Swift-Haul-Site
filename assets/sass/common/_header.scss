@@ -6,16 +6,19 @@
     .cs_logi_topbar {
       border-bottom: 1px solid $border;
     }
+
     .cs-topbar-container {
       margin-left: 100px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       .cs-logi-topbar-right {
         display: flex;
         align-items: center;
       }
     }
+
     .cs-header-emai-phone {
       position: absolute;
       right: 0;
@@ -27,15 +30,18 @@
       background: $white;
       z-index: 299;
       transition: all 0.5s;
+
       .cs-topbar-email {
         text-align: center;
         padding: 10px 0px;
         border-bottom: 1px solid $border;
         color: $black;
       }
+
       .cs-header-phone {
         .cs-header-phone-content {
           margin: 0px 25px;
+
           .cs-header-phone-in {
             margin-top: 16.5px;
             display: flex;
@@ -44,19 +50,23 @@
             border-radius: 100px;
             padding: 12px 20px;
           }
+
           .cs-header-phone-icon {
             margin-top: 5px;
+
             i {
               color: $white;
               font-size: 32px;
             }
           }
+
           .cs-header-phone-number {
             margin-left: 10px;
             display: flex;
             flex-direction: column;
             gap: 3px;
             color: white;
+
             span {
               margin: 0px;
               line-height: 100%;
@@ -64,11 +74,13 @@
               padding: 0;
               font-family: "Radio Canada Big";
             }
+
             h6 {
               color: white;
             }
           }
         }
+
         &:hover {
           .cs-header-phone-content {
             transition: all 0.5s ease;
@@ -76,35 +88,42 @@
         }
       }
     }
-    &.header-no-bg{
+
+    &.header-no-bg {
       background: transparent;
+
       a,
       span,
       i,
       ul,
-      li{
+      li {
         color: $white;
       }
-      .cs_main_header{
-        .cs_main_header_in{
-          .cs-logi-header-logo{
-            .cs-logi-black-logo{
+
+      .cs_main_header {
+        .cs_main_header_in {
+          .cs-logi-header-logo {
+            .cs-logi-black-logo {
               display: none;
             }
           }
         }
       }
-      .cs-header-emai-phone .cs-topbar-email{
+
+      .cs-header-emai-phone .cs-topbar-email {
         border-bottom: none;
       }
-      .cs_logi_topbar{
+
+      .cs_logi_topbar {
         border-bottom: 1px solid rgba($color: $white, $alpha: 0.3);
       }
-      .cs-header-emai-phone{
+
+      .cs-header-emai-phone {
         background: transparent;
         border: 1px solid rgba($color: $white, $alpha: 0.3);
       }
-      .cs_nav .cs_nav_list > li.menu-item-has-children > a::after{
+
+      .cs_nav .cs_nav_list>li.menu-item-has-children>a::after {
         border: 0px solid $white;
         height: 5px;
         width: 5px;
@@ -113,47 +132,55 @@
         margin-top: 5px;
         transition: all 0.4s ease;
       }
-      .cs_nav .cs_nav_list > li.menu-item-has-children:hover > a::after{
+
+      .cs_nav .cs_nav_list>li.menu-item-has-children:hover>a::after {
         background: $accent;
         transition: all 0.4s ease;
       }
-      .menu-item-has-children{
-        a{
-          ::after{
+
+      .menu-item-has-children {
+        a {
+          ::after {
             color: $white !important;
           }
         }
       }
-      .cs-header-additional-item{
-        a{
+
+      .cs-header-additional-item {
+        a {
           color: $white !important;
         }
       }
-      &.cs_gescout_show{
+
+      &.cs_gescout_show {
         background: rgba($dark-bg, 0.5);
         backdrop-filter: blur(50px);
-        .cs-header-emai-phone{
+
+        .cs-header-emai-phone {
           background: rgba($dark-bg, 1);
           backdrop-filter: blur(50px);
           border: none;
         }
       }
     }
-    &.header-no-right-area{
-      .cs_main_header_right{
+
+    &.header-no-right-area {
+      .cs_main_header_right {
         margin-right: 100px !important;
       }
     }
   }
-  @media screen and (max-width: 991px){
-    &.header-no-bg{
-      .cs_main_header{
-        .cs_main_header_in{
-          .cs-logi-header-logo{
-            .cs-logi-black-logo{
+
+  @media screen and (max-width: 991px) {
+    &.header-no-bg {
+      .cs_main_header {
+        .cs_main_header_in {
+          .cs-logi-header-logo {
+            .cs-logi-black-logo {
               display: inherit;
             }
-            .cs-logi-white-logo{
+
+            .cs-logi-white-logo {
               display: none;
             }
           }
@@ -167,13 +194,16 @@
   .cs-topbar-social {
     padding-right: 330px;
     border-right: 1px solid $border;
+
     ul {
       display: flex;
       margin: 0px;
       padding: 10px 0px;
+
       li {
         list-style: none;
         padding-right: 15px;
+
         &:last-child {
           padding: 0px;
         }
@@ -193,30 +223,36 @@
   z-index: 99;
   background: $white;
   transition: all 0.4s ease;
+  overflow-x: clip;
 }
 
 @media screen and (max-width: 1320px) {
   .cs-header-emai-phone {
     display: none;
   }
+
   .cs_site_header.cs_style1 .cs_main_header_right {
     margin-right: 0px !important;
-    .cs-header-additional-item:hover{
-      a{
+
+    .cs-header-additional-item:hover {
+      a {
         color: $accent;
         transition: all 0.4s ease;
       }
     }
   }
+
   .cs-header-emai-phone {
     width: 0px;
   }
+
   .cs_site_header .cs-topbar-container .cs-topbar-social {
     padding-right: 30px;
   }
 }
 
 .cs_site_header.cs_style1 {
+
   .cs_main_header_in,
   .cs_top_header_in {
     display: flex;
@@ -225,27 +261,33 @@
     justify-content: space-between;
     position: relative;
   }
+
   .cs_main_header_right {
     display: flex;
     align-items: center;
     align-items: center;
     height: 100%;
     margin-right: 300px;
+
     .cs-header-additional-item {
       margin-right: 30px;
-      a{
+
+      a {
         color: $black;
         transition: all 0.3s ease;
-        &:hover{
+
+        &:hover {
           color: $accent;
           transition: all 0.3s ease;
         }
       }
     }
+
     .cs_toolbox {
       margin-right: 30px;
     }
   }
+
   &:hover {
     .cs-header-phone-icon {
       transform: rotateY(360deg);
@@ -254,7 +296,7 @@
   }
 }
 
-.cs_nav + .cs_toolbox {
+.cs_nav+.cs_toolbox {
   margin-left: 50px;
   margin-right: 30px;
 }
@@ -264,6 +306,7 @@
     background-color: $white;
     box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
   }
+
   .cs_icon_btn {
     display: flex;
     justify-content: center;
@@ -275,9 +318,11 @@
     border-radius: 50%;
     color: var(--primary-color);
     margin-right: -10px;
+
     &.cs_color_1 {
       color: $white;
     }
+
     .cs_icon_btn_in {
       width: 25px;
       height: 20px;
@@ -286,6 +331,7 @@
       position: relative;
       text-align: left;
       overflow: hidden;
+
       span {
         display: inline-block;
         position: absolute;
@@ -298,38 +344,47 @@
         transition: 0s ease-in-out;
         border-radius: 6px;
         transition: 0.3s ease-in-out;
+
         &:nth-child(1) {
           transform: translate(0, -7px);
           width: calc(100% - 10px);
         }
+
         &:nth-child(2) {
           transform: translate(0, 0);
           width: 100%;
         }
+
         &:nth-child(3) {
           transform: translate(0, 7px);
           width: calc(100% - 7px);
         }
+
         &:nth-child(4) {
           transform: translate(0, 14px);
           width: calc(100% - 13px);
         }
       }
     }
+
     &:hover {
       .cs_icon_btn_in {
         span {
           transition: 0.3s ease-in-out;
+
           &:nth-child(1) {
             transform: translate(0, 0);
           }
+
           &:nth-child(2) {
             transform: translate(0, 7px);
             width: 100%;
           }
+
           &:nth-child(3) {
             transform: translate(0, 14px);
           }
+
           &:nth-child(4) {
             transform: translate(0, 21px);
           }
@@ -337,18 +392,22 @@
       }
     }
   }
+
   .cs_action_box {
     display: flex;
     align-items: center;
+
     .cs_action_value {
       margin-left: 15px;
     }
-    > * {
+
+    >* {
       &:not(:last-child) {
         margin-right: 35px;
       }
     }
   }
+
   .cs_btn {
     padding: 13px 15px;
   }
@@ -356,18 +415,22 @@
 
 .cs_site_header_style1 {
   border-bottom: 1px solid #1a188d;
+
   .cs_main_header_right {
     display: flex;
     align-items: center;
   }
-  .cs_nav + .cs_header_toolbox.cs_center {
+
+  .cs_nav+.cs_header_toolbox.cs_center {
     margin-left: 35px;
   }
-  .cs_nav .cs_nav_list > li.current-menu-item > a:before {
+
+  .cs_nav .cs_nav_list>li.current-menu-item>a:before {
     bottom: -4px;
     background-color: $white;
   }
 }
+
 .cs_side_header_overlay {
   background-color: rgba($dark-bg, 0.5);
   height: 100vh;
@@ -387,28 +450,35 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
+
   .cs_side_header_heading {
     font-size: 22px;
     line-height: 1.4em;
     margin: 0;
   }
+
   .cs_side_header_title {
     font-size: 18px;
     margin-bottom: 25px;
   }
+
   .cs_side_header_box {
     padding: 35px 0;
   }
+
   .cs_close {
     opacity: 0;
   }
+
   &.active {
     opacity: 1;
     visibility: visible;
+
     .cs_side_header_overlay,
     .cs_close {
       opacity: 1;
     }
+
     .cs_side_header_in {
       right: 0;
     }
@@ -425,6 +495,7 @@
   color: $black;
   cursor: pointer;
   z-index: 299;
+
   &::before,
   &::after {
     content: "";
@@ -438,9 +509,11 @@
     margin-top: -1px;
     transform: rotate(-45deg);
   }
+
   &::before {
     transform: rotate(45deg);
   }
+
   &:hover {
     color: $accent;
     transform: scale(1.05);
@@ -448,28 +521,34 @@
 }
 
 @media screen and (max-width: 1199px) {
-  .menu-item-has-children.active{
+  .menu-item-has-children.active {
     transition: all 0.5s ease;
-    ul{
+
+    ul {
       display: block !important;
       transition: all 0.5s ease;
     }
   }
+
   .cs-header-additional-item {
     margin-right: 80px !important;
   }
+
   .cs-topbar-container {
     margin-left: 10px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .cs-topbar-social{
+
+    .cs-topbar-social {
       border: none;
     }
   }
+
   .cs_main_header .container {
     max-width: 100%;
   }
+
   .cs_site_header.cs_style1 {
     .cs_nav {
       display: flex;
@@ -494,12 +573,15 @@
 .cs_gescout_show {
   top: 0 !important;
   opacity: 1;
+
   &.cs_color_1 {
     .cs_nav_list.cs_color_1 {
       color: var(--common-color-black) !important;
+
       .menu-item-has-children.cs_changes_color_1 {
-        > a {
+        >a {
           position: relative;
+
           &::after {
             content: "";
             display: inline-block;
@@ -517,6 +599,7 @@
         }
       }
     }
+
     .cs_toolbox {
       .cs_icon_btn {
         &.cs_color_1 {
@@ -529,6 +612,7 @@
 
 .cs_site_branding {
   display: inline-block;
+
   img {
     max-height: 45px;
   }
@@ -537,13 +621,16 @@
 @media screen and (min-width: 1200px) {
   .cs_nav_list.cs_color_1 {
     color: $white;
+
     ul {
       color: var(--common-color-black);
     }
   }
+
   .cs_main_header {
     position: relative;
   }
+
   .cs_main_header_center,
   .cs_top_header_center {
     position: absolute;
@@ -551,6 +638,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
   .cs_site_header.cs_style1 {
     .cs_main_header_center {
       display: flex;
@@ -560,55 +648,66 @@
       width: 100%;
       max-width: calc(100% - 300px);
     }
+
     .cs_main_header_left {
       margin-left: 100px;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+
       .cs-logi-header-logo {
         margin-right: 30px;
       }
     }
   }
+
   .cs_nav {
     display: flex;
     align-items: center;
     height: 80px;
     line-height: 1.6em;
     font-size: 16px;
+
     .cs_nav_list {
       display: flex !important;
       flex-wrap: wrap;
       height: inherit;
-      > li {
+
+      >li {
         margin-right: 40px;
         height: inherit;
+
         &:last-child {
           margin-right: 0;
         }
-        > a {
+
+        >a {
           padding: 10px 0;
           display: inline-flex;
           position: relative;
           height: inherit;
           align-items: center;
         }
-        > ul {
+
+        >ul {
           left: 0;
           top: calc(100% + 15px);
         }
+
         &:hover {
-          > ul {
+          >ul {
             top: 100%;
             opacity: 1;
             visibility: visible;
             transition: all 0.4s ease;
           }
         }
+
         &.menu-item-has-children {
-          > a {
+          >a {
             position: relative;
+
             &::after {
               content: "";
               display: inline-block;
@@ -624,9 +723,11 @@
               border-radius: 0px 0px 2px 0px;
             }
           }
+
           &.cs_changes_color_1 {
-            > a {
+            >a {
               position: relative;
+
               &::after {
                 content: "";
                 display: inline-block;
@@ -645,9 +746,11 @@
           }
         }
       }
+
       li:not(.cs_mega_menu) {
         position: relative;
       }
+
       ul {
         width: 260px;
         background-color: var(--dark-bg);
@@ -660,27 +763,32 @@
         border-radius: 10px;
         transition: all 0.1s ease;
         color: $border;
+
         li {
           &:hover {
             ul {
               top: 0px;
               color: white;
             }
-            > ul {
+
+            >ul {
               opacity: 1;
               visibility: visible;
               transition: all 0.4s ease;
             }
           }
         }
+
         a {
           display: block;
           line-height: inherit;
           padding: 10px 5px 0px 20px;
+
           span {
             color: $white;
           }
         }
+
         ul {
           top: 15px;
           left: 100%;
@@ -688,16 +796,19 @@
       }
     }
   }
+
   .cs_munu_toggle,
   .cs_munu_dropdown_toggle {
     display: none;
   }
+
   .cs_nav_black_section {
     ul {
       position: relative;
       list-style: none;
       line-height: 65px;
       padding: 0px;
+
       li {
         margin-top: 40px;
         font-size: 55px;
@@ -705,6 +816,7 @@
         font-weight: 900;
       }
     }
+
     &.cs_font_changes {
       .cs_style_1 {
         ul {
@@ -718,30 +830,37 @@
       }
     }
   }
+
   .menu-item-has-black-section {
     position: relative;
+
     span {
       cursor: pointer;
     }
   }
-  .menu-item-has-black-section > a {
+
+  .menu-item-has-black-section>a {
     position: relative;
   }
-  .menu-item-has-black-section > ul {
+
+  .menu-item-has-black-section>ul {
     padding-left: 40px;
     display: none;
     list-style: none;
     line-height: 30px;
+
     li {
       margin-top: 40px;
     }
   }
+
   .cs_munu_dropdown_toggle_1 {
     position: absolute;
     height: 30px;
     width: 35px;
     right: 20px;
     top: 9px;
+
     &:before,
     &:after {
       content: "";
@@ -755,15 +874,18 @@
       background-color: $white;
       transition: all 0.3s ease;
     }
+
     &:before {
       transform: translate(-50%, -50%) rotate(90deg);
     }
+
     &.active {
       &:before {
         transform: translate(-50%, -50%) rotate(0deg);
       }
     }
   }
+
   .cs_nav .cs_nav_list {
     .cs_mega_wrapper {
       width: 520px !important;
@@ -773,26 +895,31 @@
       position: absolute;
       flex-wrap: wrap;
       padding: 5px 15px 10px;
+
       a {
         img {
           border-radius: 5px;
           border: 1px solid rgba(181, 181, 181, 0.1);
           transition: all 0.5s ease;
         }
+
         &:hover {
           img {
             border-color: rgba($accent, 0.6);
           }
         }
       }
-      > li {
+
+      >li {
         flex: 1;
         flex-basis: 50%;
-        > a {
+
+        >a {
           &:hover {
             background-color: transparent;
           }
         }
+
         ul {
           position: initial;
           border: none;
@@ -803,6 +930,7 @@
         }
       }
     }
+
     .cs_mega_menu {
       &:hover {
         .cs_mega_wrapper {
@@ -814,12 +942,8 @@
       }
     }
   }
-  .cs_nav
-    .cs_nav_list
-    > li
-    ul:not(.cs_mega_wrapper)
-    .menu-item-has-children
-    > a {
+
+  .cs_nav .cs_nav_list>li ul:not(.cs_mega_wrapper) .menu-item-has-children>a {
     position: relative;
   }
 }
@@ -840,21 +964,25 @@
   right: -500px;
   transition: all 0.4s ease;
   overflow: hidden;
+
   .cs-sidebar-about-brand {
     max-width: 325px;
     margin: auto;
   }
+
   .cs-sidebar-middle-area {
     position: absolute;
     top: 50%;
     left: 0;
     right: 0;
     margin: auto;
+
     .cs-sidebar-social {
       svg {
         width: 17px;
         height: 17px;
       }
+
       a:hover {
         svg {
           path {
@@ -864,39 +992,49 @@
         }
       }
     }
+
     p {
       padding-bottom: 25px;
       max-width: 200px;
       margin: auto;
     }
+
     .cs-sidebar-emai-phone {
       padding-bottom: 70px;
       display: flex;
       flex-direction: column;
     }
   }
+
   .cs-sidebar-bottom-area {
     position: absolute;
     bottom: 30px;
     width: 80%;
+
     .footer-email {
       border-bottom: 1px solid rgba($black, 0.2);
       color: $black;
+
       &:focus {
         border-bottom: 1px solid $black;
       }
+
       &::placeholder {
         color: $black;
       }
     }
+
     .cs-newsletter-email {
       border-bottom: 1px solid rgba($black, 0.6);
+
       &:hover {
         border-bottom: 1px solid rgba($accent, 0.6);
       }
+
       &::placeholder {
         color: $black;
       }
+
       &:focus {
         color: $black;
       }
@@ -904,6 +1042,7 @@
 
     button {
       color: $black;
+
       i {
         margin-top: 5px;
       }
@@ -915,34 +1054,42 @@
   .cs_nav .cs_nav_list .cs_mega_wrapper {
     width: 520px !important;
   }
+
   .cs_site-branding {
     max-width: 190px;
   }
+
   .cs_site_header_full_width .container {
     max-width: 100%;
   }
 }
+
 @media screen and (max-width: 1320px) {
   .cs-header-emai-phone {
     display: none;
   }
 }
+
 @media screen and (max-width: 1199px) {
   .cs-header-action-item {
     display: none !important;
   }
+
   .cs_nav .cs_nav_list .cs_mega_wrapper {
     width: 100% !important;
   }
+
   .cs_site_header_full_width .container {
     padding: 0 15px;
   }
+
   .cs_munu_dropdown_toggle {
     position: absolute;
     height: 30px;
     width: 30px;
     right: 20px;
     top: 5px;
+
     &:before,
     &:after {
       content: "";
@@ -956,15 +1103,18 @@
       background-color: var(--body-color);
       transition: all 0.3s ease;
     }
+
     &:before {
       transform: translate(-50%, -50%) rotate(90deg);
     }
+
     &.active {
       &:before {
         transform: translate(-50%, -50%) rotate(0deg);
       }
     }
   }
+
   .cs_nav {
     .cs_nav_list {
       position: absolute;
@@ -981,19 +1131,23 @@
       max-height: calc(100vh - 80px);
       background: $white;
       line-height: 1.6em;
+
       ul {
         padding-left: 15px;
         display: none;
       }
+
       a {
         display: block;
         padding: 8px 20px;
       }
     }
+
     .menu-item-has-children {
       position: relative;
     }
   }
+
   /*Mobile Menu Button*/
   .cs_munu_toggle {
     display: inline-block;
@@ -1003,6 +1157,7 @@
     position: absolute;
     top: 27px;
     right: 30px;
+
     span,
     span:before,
     span:after {
@@ -1011,12 +1166,14 @@
       background-color: currentColor;
       display: block;
     }
+
     span {
       margin: 0 auto;
       position: relative;
       top: 12px;
       transition-duration: 0s;
       transition-delay: 0.2s;
+
       &:before {
         content: "";
         position: absolute;
@@ -1025,6 +1182,7 @@
         transition-duration: 0.2s;
         transition-delay: 0.2s, 0s;
       }
+
       &:after {
         content: "";
         position: absolute;
@@ -1035,20 +1193,24 @@
       }
     }
   }
+
   .cs_site_header.cs_style1 .cs_munu_toggle {
     top: 50%;
     right: 10px;
     margin-top: -13px;
   }
+
   .cs_toggle_active {
     span {
       background-color: rgba(0, 0, 0, 0);
       transition-delay: 0.2s;
+
       &:before {
         margin-top: 0;
         transform: rotate(45deg);
         transition-delay: 0s, 0.2s;
       }
+
       &:after {
         margin-top: 0;
         transform: rotate(-45deg);
@@ -1056,21 +1218,27 @@
       }
     }
   }
+
   .cs_header_toolbox {
     margin-right: 50px;
   }
+
   .cs_nav .cs_nav_list a {
     position: relative;
   }
+
   .cs_site_header.cs_style1 .cs_main_header_in {
     padding: 22px 0px;
   }
+
   .cs_hamburger span {
     height: 3px;
   }
-  .cs_site_header .current-menu-item > a:before {
+
+  .cs_site_header .current-menu-item>a:before {
     display: none;
   }
+
   .cs_site_header.cs_style1 .cs_main_header_center {
     .cs_site_branding {
       position: absolute;
@@ -1079,16 +1247,20 @@
       transform: translateY(-50%);
     }
   }
+
   .cs_site_header.cs_style1 {
     top: 0;
   }
+
   .cs_toolbox {
     margin-right: 45px;
   }
+
   .cs_site_header.cs_style1 .cs_icon_btn {
     width: 38px;
     height: 38px;
   }
+
   .cs_toolbox,
   .cs_side_header {
     display: none;
@@ -1099,21 +1271,26 @@
   .cs_site_header .cs-topbar-container .cs-topbar-email {
     width: 150px;
   }
+
   .cs_site_branding {
     margin-left: 10px;
   }
+
   .cs_site_header .container {
     max-width: 100%;
   }
+
   .cs_site_header.cs_style1 {
-    .cs_action_box > *:not(:last-child) {
+    .cs_action_box>*:not(:last-child) {
       margin-right: 25px;
     }
   }
+
   .cs_site_header.cs_style1 .cs_btn {
     padding: 8px;
   }
 }
+
 @media screen and (max-width: 640px) {
   .cs-topbar-left {
     display: none;
@@ -1124,16 +1301,20 @@
   .cs_site-branding {
     max-width: 150px;
   }
+
   .cs_hamburger_wrap .cs_hamburger {
     margin-right: 0;
   }
+
   .cs_site_branding img {
     max-height: 32px;
   }
+
   .cs_site_header.cs_style1 .cs_btn {
     span {
       display: none;
     }
+
     svg {
       margin-right: 0;
       width: 20px;
@@ -1141,6 +1322,7 @@
     }
   }
 }
+
 .menu-item-has-children {
   ul {
     li:hover a {
@@ -1148,13 +1330,15 @@
     }
   }
 }
+
 @media screen and (max-width: 575px) {
   .cs-header-additional-item {
     display: none;
   }
 }
+
 @media screen and (max-width: 400px) {
-  .cs_logi_topbar{
+  .cs_logi_topbar {
     display: none;
   }
 }
